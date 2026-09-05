@@ -452,54 +452,153 @@ z               <div class="contact-details">
                     Netlify Forms
                     Integración externa para captura de leads.
                 -->
-                <form name="contacto-nexora"method="POST" action="gracias.html" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-form" id="contactForm">
                     
-                    <input type="hidden" name="form-name" value="contacto-nexora">
-                    <p class="d-none">
-                        <label> No llenar este campo: <input name="bot-field"></label>
-                    </p>
+               <form
+    name="contacto-nexora"
+    method="POST"
+    action="/gracias.html"
+    netlify
+    netlify-honeypot="bot-field"
+    class="contact-form"
+    id="contactForm"
+>
 
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="nombre" class="form-label"> Nombre *</label>
-                            <input type="text" id="nombre"name="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
-                        </div>
+    <input
+        type="hidden"
+        name="form-name"
+        value="contacto-nexora"
+    >
 
+    <p class="d-none">
+        <label>
+            No llenar este campo:
+            <input name="bot-field">
+        </label>
+    </p>
 
-                        <div class="col-md-6">
-                            <label for="empresa" class="form-label"> Empresa </label>
-                            <input type="text" id="empresa" name="empresa" class="form-control" placeholder="Ingresa el nombre de empresa">
-                        </div>
+    <div class="row g-3">
 
+        <div class="col-md-6">
 
-                        <div class="col-md-6">
-                            <label for="correo" class="form-label"> Correo * </label>
-                            <input type="email" id="correo" name="correo" class="form-control" placeholder="Ingresa tu correo" required>
-                        </div>
+            <label
+                for="nombre"
+                class="form-label"
+            >
+                Nombre *
+            </label>
 
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="form-control"
+                placeholder="Ingresa tu nombre"
+                required
+            >
 
-                        <div class="col-md-6">
-                            <label for="telefono" class="form-label"> Teléfono </label>
-                            <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="+52 55 1234 5678">
-                        </div>
+        </div>
 
+        <div class="col-md-6">
 
-                        <div class="col-12">
-                            <label for="mensaje" class="form-label"> Cuéntanos tu proyecto * </label>
-                            <textarea id="mensaje" name="mensaje" rows="5" class="form-control" placeholder="Cuéntanos brevemente qué necesitas..." required></textarea>
-                        </div>
+            <label
+                for="empresa"
+                class="form-label"
+            >
+                Empresa
+            </label>
 
-                        <div class="col-12">
-                            <div class="form-footer">
-                                <small> * Campos obligatorios </small>
-                                <button type="submit" class="btn btn-nexora btn-lg">
-                                    Enviar solicitud <i class="bi bi-send"></i>
-                                </button>
-                            </div>
-                        </div>
+            <input
+                type="text"
+                id="empresa"
+                name="empresa"
+                class="form-control"
+                placeholder="Ingresa el nombre de empresa"
+            >
 
-                    </div>
-                </form>
+        </div>
+
+        <div class="col-md-6">
+
+            <label
+                for="correo"
+                class="form-label"
+            >
+                Correo *
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                class="form-control"
+                placeholder="Ingresa tu correo"
+                required
+            >
+
+        </div>
+
+        <div class="col-md-6">
+
+            <label
+                for="telefono"
+                class="form-label"
+            >
+                Teléfono
+            </label>
+
+            <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                class="form-control"
+                placeholder="+52 55 1234 5678"
+            >
+
+        </div>
+
+        <div class="col-12">
+
+            <label
+                for="mensaje"
+                class="form-label"
+            >
+                Cuéntanos tu proyecto *
+            </label>
+
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                class="form-control"
+                placeholder="Cuéntanos brevemente qué necesitas..."
+                required
+            ></textarea>
+
+        </div>
+
+        <div class="col-12">
+
+            <div class="form-footer">
+
+                <small>
+                    * Campos obligatorios
+                </small>
+
+                <button
+                    type="submit"
+                    class="btn btn-nexora btn-lg"
+                >
+                    Enviar solicitud
+                    <i class="bi bi-send"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
             </div>
         </div>
     </div>
